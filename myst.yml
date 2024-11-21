@@ -1,0 +1,27 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: My test of cookiecutter myst
+  description: Testing the cookiecutter
+  # keywords: []
+  authors:
+    - name: Mathew Biddle
+      orcid: 0000-0003-4897-1669
+      github: mathewbiddle
+  github: https://github.com/mathewbiddle/my_test
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+  toc:
+    - file: README.md
+    - title: Organizing Preparation
+      children:
+        - file: organizers/getting-started.md
+        - file: organizers/organizing-checklist.md
+    - title: Projects
+      children:
+        - pattern: 'projects/project-*'
+site:
+  template: book-theme
+  # Modify this section with the logos of your choice
+  options:
+    favicon: https://hackthackathon.github.io/images/navbar-logo.png
+    logo: https://hackthackathon.github.io/images/navbar-logo.png

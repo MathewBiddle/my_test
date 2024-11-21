@@ -1,0 +1,7 @@
+name: my_test-dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - mystmd
+  - cookiecutter
