@@ -73,3 +73,4 @@ if __name__ == '__main__' :
         os.makedirs(path, exist_ok=True)
         with open('{}/project-{}.md'.format(path,fname), "w") as f:
             f.write('## '+title+'\n\n'+issue['body'])
+        print('wrote {}/project-{}.md'.format(path,fname))
